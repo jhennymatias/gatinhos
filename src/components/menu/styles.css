@@ -1,0 +1,27 @@
+.home-header{
+    background-color:  var(--color-background-secondary);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 6rem;
+    color: white;
+    align-content: center;
+    justify-content: center;
+}
+
+.home-header .links{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 90rem;
+}
+
+.home-header h2{
+    margin-top: 1rem;
+}
+
+.home-header a{
+    color: white;
+    margin-right: 1rem;
+}
