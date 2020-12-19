@@ -16,6 +16,13 @@
 .alimentos-container .alimentos-content .alimentos-body .pesquisar{
     margin-top: 2rem;
     margin-bottom: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.alimentos-container .alimentos-content .alimentos-body .pesquisar p{
+    margin-right: 2rem;
 }
 
 .alimentos-container .alimentos-content .alimentos-body .itens{
@@ -25,13 +32,57 @@
 }
 
 .alimentos-container .alimentos-content .alimentos-body .itens .item{
-    background-color: lightgray;
+    background-color: rgb(228, 228, 228);
+    color: white ;
     width: 40rem;
+    height: 10rem;
     padding: 1rem;
     margin: 1rem;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alimentos-container .alimentos-content .alimentos-body .itens a{
+text-decoration: none;
 }
 
 .alimentos-container .alimentos-content .alimentos-body .itens .item:hover{
-    background-color: gray;
+    background-color: lightblue;
+}
+
+
+.alimentos-container .alimentos-content .alimentos-body .itens .item strong{
+    font-size: 3rem;
+}
+
+.pages{
+    margin-top: 2rem;
+    color: grey;
+}
+
+#fraco{
+    background-color: darkolivegreen;
+}
+
+#medio{
+    background-color: darkorange;
+}
+
+#alto{
+    background-color: darkred;
+}
+
+.alimentos-container .alimentos-content .alimentos-body .classificacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.alimentos-container .alimentos-content .alimentos-body .classificacao .classificacao-icon{
+    margin-left: 3rem;
+    margin-right: 0.5rem;
 }
