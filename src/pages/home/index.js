@@ -1,7 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './styles.css';
-import {FaAppleAlt, FaLeaf, FaFileMedical } from 'react-icons/fa';
+import { FaAppleAlt, FaLeaf, FaFileMedical } from 'react-icons/fa';
 import Menu from '../../components/menu';
 
 function Home() {
@@ -12,9 +12,22 @@ function Home() {
 
                 <h2 className="home-title">Selecione uma área para descobrir o que é tóxico para seu pet:</h2>
                 <div className="home-body">
-                    <div className="categoria"> <Link to="/alimentos">Alimentos</Link><FaAppleAlt/></div>
-                    <div className="categoria">Remédios <FaFileMedical/> </div>
-                    <div className="categoria">Plantas <FaLeaf /></div>
+
+                    <Link to="/categoria">
+                        <div className="categoria" id="alimentos">
+                            <FaAppleAlt />Alimentos
+                        </div>
+                    </Link>
+                    <Link to="/categoria">
+                        <div className="categoria" id="remedios">
+                            <FaFileMedical />Remédios
+                            </div>
+                    </Link>
+                    <Link to="/categoria">
+                        <div className="categoria" id="plantas">
+                            <FaLeaf />Plantas
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

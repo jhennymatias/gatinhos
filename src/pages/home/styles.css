@@ -12,8 +12,8 @@
     align-items: center;
 }
 .home-container .home-content .home-title{
-    margin-top: 3rem;
-    color: var(--color-text-in-primary)
+    margin-top: 5rem;
+    color: var(--color-text-in-primary);
 }
 .home-container .home-content .home-body{
     display: grid;
@@ -27,11 +27,38 @@
     margin: 1rem;
     padding: 9rem;
     border-radius: 12px;
+    font-size: 3rem;
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.home-container .home-content .categoria a{
+.home-container .home-content a{
     text-decoration: none;
-    color:black
+    color:white
 }
-.home-container .home-content .categoria:hover{
-    background-color: gray;
+
+#alimentos{
+    background-color: darkorange;
+}
+
+#alimentos:hover{
+    background-color: orange;
+}
+
+#remedios{
+    background-color: darkred;
+}
+
+#remedios:hover{
+    background-color: red;
+}
+
+#plantas{
+    background-color: darkolivegreen;
+}
+
+#plantas:hover{
+    background-color: darkgreen;
 }

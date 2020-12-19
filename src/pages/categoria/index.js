@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import './styles.css';
-import { FaAppleAlt, FaLeaf, FaFileMedical, FaCat } from 'react-icons/fa';
+import {FaCat } from 'react-icons/fa';
 import Menu from '../../components/menu';
 
 function Home() {
