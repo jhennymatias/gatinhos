@@ -5,6 +5,8 @@ import Home from './pages/home';
 import Categoria from './pages/categoria';
 import Cuidados from './pages/cuidados';
 import Info from './pages/info';
+import Cadastro from './pages/cadastro';
+
 const Routes = () => (
     <BrowserRouter>
         <Switch>
@@ -13,6 +15,7 @@ const Routes = () => (
             <Route path="/categoria" component={Categoria} />
             <Route path="/cuidados" component={Cuidados} />
             <Route path="/info" component={Info} />
+            <Route path="/cadastro" component={Cadastro} />
         </Switch>
     </BrowserRouter>
 );
