@@ -1,18 +1,32 @@
+import React, { useState, useEffect } from 'react';
+import api from '../../service/api';
 
-import React from 'react';
-import { Link } from 'react-router-dom'
 import './styles.css';
-import { FaCat, FaDog } from 'react-icons/fa';
 import Menu from '../../components/menu';
-import Input from '../../components/input';
-
 function Cuidados() {
+    const [animals, setAnimal] = useState([]);
+
+    useEffect(() => {
+        api.get('animal')
+            .then(response => {
+                setAnimal(response.data);
+            });
+    }, [animals]);
+
+    console.log(animals)
     return (
         <div className="cuidados-container">
             <div className="cuidados-content">
                 <Menu />
                 <div className="cuidados-body">
-                    Cuidados
+                    <ul>
+                        {animals.map(animal => (
+                            <li key={animal.id}>
+                                <strong>{animal.name}</strong>
+                                <p>{animal.care}</p>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </div>

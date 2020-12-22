@@ -6,6 +6,7 @@ import Categoria from './pages/categoria';
 import Cuidados from './pages/cuidados';
 import Info from './pages/info';
 import Cadastro from './pages/cadastro';
+import Login from './pages/login';
 
 const Routes = () => (
     <BrowserRouter>
@@ -16,6 +17,7 @@ const Routes = () => (
             <Route path="/cuidados" component={Cuidados} />
             <Route path="/info" component={Info} />
             <Route path="/cadastro" component={Cadastro} />
+            <Route path="/login" component={Login} />
         </Switch>
     </BrowserRouter>
 );
